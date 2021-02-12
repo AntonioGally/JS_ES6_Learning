@@ -9,3 +9,4 @@ Repositório do curso de Java Script ES6 avançado gerenciado pela Digital Innov
 - Aula 01 => Arrows Functions
 - Aula 02 => Default Function Arguments
 - Aula 03 => Enhanced Object Literals
+- Aula 04 => Rest, Spread Operator e Destructuring
