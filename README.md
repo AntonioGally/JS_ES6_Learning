@@ -12,3 +12,5 @@ Repositório do curso de Java Script ES6 avançado gerenciado pela Digital Innov
 - Aula 04 => Rest e Spread Operator
 - Aula 05 => Destructuring
 - Aula 06 => Symbols e Iterators
+- Aula 07 => Generators e onde utilizar
+- Aula 08 => Callbacks e Promises
