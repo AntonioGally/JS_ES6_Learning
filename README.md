@@ -15,3 +15,4 @@ Repositório do curso de Java Script ES6 avançado gerenciado pela Digital Innov
 - Aula 07 => Generators e onde utilizar
 - Aula 08 => Callbacks e Promises
 - Aula 09 => Fetch, Async/Await e Event Emitter
+- Aula 10 => Testes, TDD e BDD
