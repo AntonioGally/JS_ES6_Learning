@@ -16,3 +16,6 @@ Repositório do curso de Java Script ES6 avançado gerenciado pela Digital Innov
 - Aula 08 => Callbacks e Promises
 - Aula 09 => Fetch, Async/Await e Event Emitter
 - Aula 10 => Testes, TDD e BDD
+- Aula 11 => Mocha, Chai e Sinon
+- Aula 12 => Tratamento de erros
+- Aula 13 => Debugging
