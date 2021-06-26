@@ -24,3 +24,7 @@ Repositório do curso de Java Script ES6 avançado gerenciado pela Digital Innov
 
 # Livro "Estrutura de dados e algoritmos com JavaScript"
 
+- Capítulo 02 => Visão geral sobre ECMAScript e TypeScript
+- Capítulo 03 => Arrays
+- Capítulo 04 => Pilhas
+
