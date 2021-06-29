@@ -28,4 +28,4 @@ Repositório do curso de Java Script ES6 avançado gerenciado pela Digital Innov
 - Capítulo 03 => Arrays
 - Capítulo 04 => Pilhas
 - Capítulo 05 => Filas e deques
-
+- Capítulo 06 => Listas ligadas
