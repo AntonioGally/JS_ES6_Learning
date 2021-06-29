@@ -27,4 +27,5 @@ Repositório do curso de Java Script ES6 avançado gerenciado pela Digital Innov
 - Capítulo 02 => Visão geral sobre ECMAScript e TypeScript
 - Capítulo 03 => Arrays
 - Capítulo 04 => Pilhas
+- Capítulo 05 => Filas e deques
 
