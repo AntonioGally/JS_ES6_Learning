@@ -20,8 +20,6 @@ Repositório do curso de Java Script ES6 avançado gerenciado pela Digital Innov
 - Aula 12 => Tratamento de erros
 - Aula 13 => Debugging
 
-
-
 # Livro "Estrutura de dados e algoritmos com JavaScript"
 
 - Capítulo 02 => Visão geral sobre ECMAScript e TypeScript
@@ -29,3 +27,4 @@ Repositório do curso de Java Script ES6 avançado gerenciado pela Digital Innov
 - Capítulo 04 => Pilhas
 - Capítulo 05 => Filas e deques
 - Capítulo 06 => Listas ligadas
+- Capítulo 07 => Conjuntos
