@@ -28,3 +28,4 @@ Repositório do curso de Java Script ES6 avançado gerenciado pela Digital Innov
 - Capítulo 05 => Filas e deques
 - Capítulo 06 => Listas ligadas
 - Capítulo 07 => Conjuntos
+- Capítulo 08 => Dicionários e hashes
