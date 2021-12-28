@@ -13,4 +13,18 @@ module.exports = {
     response.writeHead(200, { 'Content-Type': 'application/json' });
     response.end(JSON.stringify(sortedUsers));
   },
+  getUserById(request, response) {
+    const { id } = request.params;
+
+    const filteredUser = users.find((el) => { return el.id == id });
+
+    if (!filteredUser) {
+      response.writeHead(400, { 'Content-Type': 'application/json' });
+      response.end(JSON.stringify({ error: 'user not find' }));
+    } else {
+      response.writeHead(200, { 'Content-Type': 'application/json' });
+      response.end(JSON.stringify(filteredUser));
+    }
+
+  }
 }
