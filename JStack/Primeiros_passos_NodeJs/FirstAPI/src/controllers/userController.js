@@ -10,8 +10,8 @@ module.exports = {
       }
       return a.id > b.id ? 1 : -1;
     });
-    response.writeHead(200, { 'Content-Type': 'application/json' });
-    response.end(JSON.stringify(sortedUsers));
+
+    response.send(200, sortedUsers);
   },
   getUserById(request, response) {
     const { id } = request.params;
@@ -19,12 +19,10 @@ module.exports = {
     const filteredUser = users.find((el) => { return el.id == id });
 
     if (!filteredUser) {
-      response.writeHead(400, { 'Content-Type': 'application/json' });
-      response.end(JSON.stringify({ error: 'user not find' }));
-    } else {
-      response.writeHead(200, { 'Content-Type': 'application/json' });
-      response.end(JSON.stringify(filteredUser));
+      return response.send(400, { error: 'User not found' });
     }
+    
+    response.send(200, filteredUser);
 
   }
 }
