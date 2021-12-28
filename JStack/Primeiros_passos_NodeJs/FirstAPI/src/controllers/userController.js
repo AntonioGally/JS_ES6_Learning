@@ -1,4 +1,4 @@
-const users = require('../mocks/users');
+let users = require('../mocks/users');
 
 
 module.exports = {
@@ -26,27 +26,51 @@ module.exports = {
 
   },
   createUser(request, response) {
+    const lastUserId = users[users.length - 1].id;
+    const newUser = {
+      id: lastUserId + 1,
+      name: request.body.name
+    }
 
-    let body = '';
+    users.push(newUser);
 
+    response.send(200, newUser);
+  },
 
+  updateUser(request, response) {
+    let { id } = request.params;
+    const { name } = request.body;
 
-    request.on('data', (chunk) => {
-      body += chunk;
-    });
+    id = Number(id);
+    const userExists = users.find((user) => user.id === id);
 
-    request.on('end', () => {
-      body = JSON.parse(body);
-
-      const lastUserId = users[users.length - 1].id;
-      const newUser = {
-        id: lastUserId + 1,
-        name: body.name
+    if (!userExists) {
+      return response.send(400, { error: 'User not found' });
+    }
+    users = users.map((userObj) => {
+      if (userObj.id === id) {
+        return {
+          ...userObj,
+          name: name
+        }
       }
+      return userObj;
+    });
+    response.send(200, { id, name })
+  },
 
-      users.push(newUser);
+  deleteUser(request, response) {
+    let { id } = request.params;
+    id = Number(id);
 
-      response.send(200, newUser);
-    })
+    const userExists = users.find((user) => user.id === id);
+
+    if (!userExists) {
+      return response.send(400, { error: 'User not found' });
+    }
+
+    users = users.filter((userObj) => userObj.id !== id);
+
+    response.send(200, { deleted: true });
   }
 }
