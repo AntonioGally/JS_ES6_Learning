@@ -1,0 +1,18 @@
+{
+  "name": "mycontacts",
+  "version": "1.0.0",
+  "description": "API to store contacts",
+  "main": " src/index.js",
+  "author": "AntonioGally",
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "ls",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
