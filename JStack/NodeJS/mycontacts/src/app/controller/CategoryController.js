@@ -14,10 +14,9 @@ class CategoryController {
 
     const category = await CategoriesRepository.findById(id);
     if (!category) {
-      response.status(400).json({ error: 'This category does not exists' });
-    } else {
-      response.send(category);
+      return response.status(400).json({ error: 'This category does not exists' });
     }
+    response.send(category);
   }
 
   async store(request, response) {
