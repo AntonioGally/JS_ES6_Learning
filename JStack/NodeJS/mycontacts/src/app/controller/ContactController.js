@@ -4,7 +4,8 @@ class ContactController {
   async index(request, response) {
     // List all registers
     const { orderBy } = request.query;
-    const contacts = await ContactsRepository.findAll(orderBy);
+    const direction = orderBy?.toUpperCase() === 'DESC' ? 'DESC' : 'ASC';
+    const contacts = await ContactsRepository.findAll(direction);
 
     response.json(contacts);
   }
