@@ -1,4 +1,4 @@
-type tvType = {
+export type tvType = {
     componentName: string;
     componentInfo: any;
 }

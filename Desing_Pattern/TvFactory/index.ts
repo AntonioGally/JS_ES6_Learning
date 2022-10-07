@@ -1,4 +1,7 @@
-import { AssembleRegularTv } from "./Commands/AssembleRegularTvFactory";
+import { TvFactory } from "./TvFactory";
 
-let myRegularTv = new AssembleRegularTv();
-console.log(myRegularTv.getMountedTv()[1].componentInfo);
+let myFancyTv = new TvFactory("fancy");
+let myRegularTv = new TvFactory("regular");
+
+console.log(myFancyTv);
+console.log(myRegularTv);
