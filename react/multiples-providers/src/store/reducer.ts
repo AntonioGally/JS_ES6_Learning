@@ -3,7 +3,7 @@ import type { RootState } from './store'
 
 interface DataState {
     active: boolean;
-    comments: string | null;
+    comments: string;
     companyId: number;
     creationDate: string;
     customEvaluationTimeLimit: null | string | number;
@@ -57,7 +57,7 @@ interface DataState {
 
 const initialState: DataState = {
     active: true,
-    comments: null,
+    comments: "asdasdasd",
     companyId: 0,
     creationDate: "",
     customEvaluationTimeLimit: null,
@@ -109,7 +109,7 @@ const initialState: DataState = {
     responseGroupId: 0,
     responseGroupName: "",
     responseId: 0,
-    responseName: "",
+    responseName: "nome da resposta",
     source: "private",
     _id: "",
 }

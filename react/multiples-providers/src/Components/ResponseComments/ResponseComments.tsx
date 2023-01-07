@@ -1,13 +1,19 @@
-import React from "react";
+import React, { memo } from "react";
 import style from "./responseComments.module.css";
 
-const ResponseComments: React.FC = () => {
+type Props = {
+    content: {
+        comments: string;
+    }
+}
+
+const ResponseComments: React.FC<Props> = (props) => {
     return (
         <div className={style["wrapper"]}>
             <h3>Comentários</h3>
-            <textarea className={style["textarea"]} />
+            <textarea className={style["textarea"]} value={props.content.comments || ""} />
         </div>
     )
 }
 
-export default ResponseComments;
+export default memo(ResponseComments);
